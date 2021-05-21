@@ -1,0 +1,149 @@
+//覆盖一些element-ui样式
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+//暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//文章页textarea修改样式
+.article-textarea {
+  textarea {
+    padding-right: 40px;
+    resize: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #bfcbd9;
+  }
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+//dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// 日期选择间隔符的宽度
+.el-date-editor .el-range-separator{
+  width: 20px;
+}
+
+// 修改button的颜色
+.el-button--primary:focus, .el-button--primary:hover {
+  background: -webkit-linear-gradient(left, #fc7b54 , #fc5959); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #fc7b54 , #fc5959); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #fc7b54 , #fc5959); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #fc7b54 , #fc5959); /* 标准的语法（必须放在最后） */
+  border-color: #fd5e5e;
+  color: #FFF;
+}
+
+.el-button--primary {
+  color: #FFF;
+  background: -webkit-linear-gradient(left, #fa6436 , #f23a3a); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #fa6436 , #f23a3a); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #fa6436 , #f23a3a); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #fa6436 , #f23a3a); /* 标准的语法（必须放在最后） */
+  border-color: #f23a3a;
+}
+
+.el-menu-item, .el-submenu__title {
+  height: 40px;
+  line-height: 40px;
+}
+
+.el-submenu .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+}
+
+// 去掉表格的竖向分割线
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed{
+  border-right: 0 solid #EBEEF5;
+}
+
+// 表头加背景色
+.el-table th.is-leaf {
+  background: rgb(238, 241, 246);
+  color: rgb(96, 98, 102);
+}
+
+// 修改el-form的label字体粗细
+.el-form-item__label {
+  font-weight: 400;
+}
+
+.el-pagination {
+  font-weight: 400;
+}
+
+// 设置全屏dialog
+.custom-fullscreen .el-dialog.is-fullscreen {
+  width: 35%;
+  float: right;
+}
+
+.custom-fullscreen .el-dialog__header {
+  border-bottom: solid 1px $thirdBoderColor;
+}

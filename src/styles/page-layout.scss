@@ -1,0 +1,89 @@
+// 顶部查询区统一样式
+.querybar {
+  // border: 1px solid #DCDFE6;
+  // border-radius: 4px;
+  // padding: 0 20px;
+  color: $defaultFontColor;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+.formbar {
+  padding-top: 10px;
+}
+
+// 顶部查询区内查询项样式
+.filter-item{
+  padding-left: 5px;
+  padding-right: 20px;
+  width: 200px;
+}
+
+// 靠右边的查询项目
+.filter-item-right{
+  padding-left: 5px;
+  width: 200px;
+}
+
+// 表格顶部操作区样式
+.toolbar-add{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #f8f6f6;
+}
+
+// 表格顶部操作区内显示名称的样式
+.name-bar{
+  line-height: 32px;
+}
+
+// 表格顶部操作区内显示图标样式
+.card-panel-icon {
+  margin-left: 10px;
+}
+
+// 分页器样式
+.pagination-container{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  // padding-right: 100px;
+}
+
+// 嵌入body的el-dialog
+body>.el-dialog__wrapper>.el-dialog>.el-dialog__body{
+  padding: 10px 20px 30px 20px
+}
+
+
+//搜索栏表单
+.el-form {
+  &.search_form_wrapper {
+    margin-bottom: 10px;
+    padding-right: 130px;
+    position: relative;
+    .el-form-item{
+      // min-width: 315px;
+      margin-top: 8px;
+      margin-bottom: 0;
+      margin-right: 40px;
+      .el-form-item__content{
+        width: 200px;
+        .el-select{
+          width:100%;
+        }
+      }
+    }
+
+    .btn-form-item {
+      min-width: 130px;
+      text-align: right;
+      margin-right: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 4;
+      .el-form-item__content{
+        width: auto;
+      }
+    }
+  }
+}
